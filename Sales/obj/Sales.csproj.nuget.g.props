@@ -12,4 +12,7 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNServiceBus Condition=" '$(PkgNServiceBus)' == '' ">/Users/andrejpoluhovic/.nuget/packages/nservicebus/7.2.0</PkgNServiceBus>
+  </PropertyGroup>
 </Project>

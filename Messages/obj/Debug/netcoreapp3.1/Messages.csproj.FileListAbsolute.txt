@@ -1,0 +1,8 @@
+/Users/andrejpoluhovic/Documents/Work/Flytoget/SRC/qs-nservicebus/Messages/obj/Debug/netcoreapp3.1/Messages.csprojAssemblyReference.cache
+/Users/andrejpoluhovic/Documents/Work/Flytoget/SRC/qs-nservicebus/Messages/obj/Debug/netcoreapp3.1/Messages.AssemblyInfoInputs.cache
+/Users/andrejpoluhovic/Documents/Work/Flytoget/SRC/qs-nservicebus/Messages/obj/Debug/netcoreapp3.1/Messages.AssemblyInfo.cs
+/Users/andrejpoluhovic/Documents/Work/Flytoget/SRC/qs-nservicebus/Messages/bin/Debug/netcoreapp3.1/Messages.deps.json
+/Users/andrejpoluhovic/Documents/Work/Flytoget/SRC/qs-nservicebus/Messages/bin/Debug/netcoreapp3.1/Messages.dll
+/Users/andrejpoluhovic/Documents/Work/Flytoget/SRC/qs-nservicebus/Messages/bin/Debug/netcoreapp3.1/Messages.pdb
+/Users/andrejpoluhovic/Documents/Work/Flytoget/SRC/qs-nservicebus/Messages/obj/Debug/netcoreapp3.1/Messages.dll
+/Users/andrejpoluhovic/Documents/Work/Flytoget/SRC/qs-nservicebus/Messages/obj/Debug/netcoreapp3.1/Messages.pdb
