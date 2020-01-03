@@ -1,7 +1,3 @@
 */bin/
+*/obj/
 .learningtransport/
-Billing/obj/Debug/netcoreapp3.1/Billing.csprojAssemblyReference.cache
-ClientUI/obj/Debug/netcoreapp3.1/ClientUI.csprojAssemblyReference.cache
-Messages/obj/Debug/netcoreapp3.1/Messages.csprojAssemblyReference.cache
-Sales/obj/Debug/netcoreapp3.1/Sales.csprojAssemblyReference.cache
-Shipping/obj/Debug/netcoreapp3.1/Shipping.csprojAssemblyReference.cache
