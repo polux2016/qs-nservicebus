@@ -1,1 +1,1 @@
-# qs-nservicebus
+# quick start with NServiceBus
