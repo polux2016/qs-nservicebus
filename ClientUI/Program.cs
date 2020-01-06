@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Messages;
+using Shared;
 using NServiceBus;
 using NServiceBus.Logging;
+using System.Diagnostics;
 
 namespace ClientUI
 {
@@ -13,11 +15,12 @@ namespace ClientUI
             Console.Title = "ClientUI";
 
             var endpointConfiguration = new EndpointConfiguration("ClientUI");
-
-            var transport = endpointConfiguration.UseTransport<LearningTransport>();
+            var transport = GlobalConfiguration.SetTransport(endpointConfiguration);
 
             var routing = transport.Routing();
             routing.RouteToEndpoint(typeof(PlaceOrder), "Sales");
+
+            await GlobalConfiguration.ReconfigureTransport(endpointConfiguration);
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
@@ -27,6 +30,8 @@ namespace ClientUI
 
             await endpointInstance.Stop()
                 .ConfigureAwait(false);
+                
+
         }
 
         static ILog log = LogManager.GetLogger<Program>();
