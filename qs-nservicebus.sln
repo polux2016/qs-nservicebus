@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipping", "Shipping\Shippi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSBDockerEndPoint", "NSBDockerEndPoint\NSBDockerEndPoint.csproj", "{E0941857-70C3-4E5C-B3D6-6C4513783A0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{18678959-3170-4488-8412-8F9B5D7A1B7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,5 +102,17 @@ Global
 		{E0941857-70C3-4E5C-B3D6-6C4513783A0E}.Release|x64.Build.0 = Release|Any CPU
 		{E0941857-70C3-4E5C-B3D6-6C4513783A0E}.Release|x86.ActiveCfg = Release|Any CPU
 		{E0941857-70C3-4E5C-B3D6-6C4513783A0E}.Release|x86.Build.0 = Release|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Debug|x64.Build.0 = Debug|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Debug|x86.Build.0 = Debug|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Release|x64.ActiveCfg = Release|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Release|x64.Build.0 = Release|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Release|x86.ActiveCfg = Release|Any CPU
+		{18678959-3170-4488-8412-8F9B5D7A1B7B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

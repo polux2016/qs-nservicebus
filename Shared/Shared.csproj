@@ -6,4 +6,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Messages\Messages.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NServiceBus.Persistence.Sql" Version="4.6.1" />
+    <PackageReference Include="NServiceBus.SqlServer" Version="5.0.2" />
+  </ItemGroup>
 </Project>

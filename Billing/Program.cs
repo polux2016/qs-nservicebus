@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using NServiceBus;
+using Shared;
 
 namespace Billing
 {
@@ -12,8 +13,9 @@ namespace Billing
 
             var endpointConfiguration = new EndpointConfiguration("Billing");
 
-            endpointConfiguration.UseTransport<LearningTransport>();
+            GlobalConfiguration.SetTransport(endpointConfiguration);
 
+            await GlobalConfiguration.ReconfigureTransport(endpointConfiguration);
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
 
@@ -22,6 +24,7 @@ namespace Billing
 
             await endpointInstance.Stop()
                 .ConfigureAwait(false);
+                
         }
     }
 }
