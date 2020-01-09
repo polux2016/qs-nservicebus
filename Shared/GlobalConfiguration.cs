@@ -11,7 +11,7 @@ namespace Shared
 {
     public static class GlobalConfiguration
     {
-        private static string SqlDBConnectionString = "Server = 172.20.10.2:1433; Database = NServiceBusHost; "
+        private static string SqlDBConnectionString = "Server = .; Database = NServiceBusHost; "
                 + "User Id = sa; Password=yourStrong(!)Password; Max Pool Size=80;";
 
         private static bool IsReconfigureMode = true;
