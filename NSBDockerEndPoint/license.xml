@@ -1,1 +1,18 @@
-﻿<!-- this file needs to be replaced with your license file-->
+<?xml version="1.0" encoding="utf-8"?>
+<license type="Trial" Applications="All" expiration="2020-02-05" id="95c59518-0da2-4885-8c01-753cd1789b1b">
+  <name>poluhovichandrey@gmail.com</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>+w+X3mdc6Yr8n8lfN0p7K7r6Cx0=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>wal4c3k1uO+XS7W9pYFDjEQPG0YkmOZIDe5Rx929IvoTi02yIMDuTXL6W/0qrCl8z7HrY2gukJyHe3ExGD3H+dN3CT9NBxAr7C+WlBGpBs5ESXrbALK9VrqTB4siQG0RTJM3f/y2r25/FIB83WuI/6pmWxnceXHjnE3AQVHgmyk=</SignatureValue>
+  </Signature>
+</license>

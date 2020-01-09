@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
+using Shared;
 
 namespace NSBDockerEndPoint
 {
@@ -14,7 +15,9 @@ namespace NSBDockerEndPoint
         public static void Main(string[] args) => MainAsync(args).GetAwaiter().GetResult();
 
         static async Task MainAsync(string[] args)
-        {
+        {   
+            Console.WriteLine(GlobalConfiguration.CheckIp("127.0.0.1", 1433));
+            Console.WriteLine(GlobalConfiguration.CheckIp("127.0.0.1", 80));
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
                 SetConsoleCtrlHandler(ConsoleCtrlCheck, true);
