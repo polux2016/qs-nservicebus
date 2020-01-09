@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using NServiceBus;
 using NServiceBus.Logging;
+using Shared;
 
 namespace NSBDockerEndPoint
 {
@@ -32,20 +33,13 @@ namespace NSBDockerEndPoint
 
                 endpointConfiguration.DefineCriticalErrorAction(OnCriticalError);
 
-                // TODO: remove this condition after choosing a transport, persistence and deployment method suitable for production
-                if (Environment.UserInteractive && Debugger.IsAttached)
-                {
-                    // TODO: choose a durable transport for production
-                    // https://docs.particular.net/transports/
-                    var transportExtensions = endpointConfiguration.UseTransport<LearningTransport>();
+               
+                // TODO: choose a durable transport for production
+                // https://docs.particular.net/transports/
+                var transportExtensions = GlobalConfiguration.SetTransport(endpointConfiguration);
 
-                    // TODO: choose a durable persistence for production
-                    // https://docs.particular.net/persistence/
-                    endpointConfiguration.UsePersistence<LearningPersistence>();
-
-                    // TODO: create a script for deployment to production
-                    endpointConfiguration.EnableInstallers();
-                }
+                await GlobalConfiguration.ReconfigureTransport(endpointConfiguration);
+            
 
                 // TODO: replace the license.xml file with your license file
 

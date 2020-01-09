@@ -4,6 +4,7 @@
  - copy License.xml to root folder
  - run command "mkdir -p ${XDG_DATA_HOME:-$HOME/.local/share}/ParticularSoftware"
  - run command "cp license.xml ${XDG_DATA_HOME:-$HOME/.local/share}/ParticularSoftware"
+ - run command "cp license.xml NSBDockerEndPoint/"
 
 # Reconfigure the DB 
  - remove DB "NServiceBusHost" if needed.
